@@ -1,24 +1,28 @@
 # docker for cloud9 ide
-It's unbuntu based cloud9 ide. To run
+It's ubuntu based cloud9 ide. To run
 
 ```bash
-$ docker run -td  -p <local-port>:8182 dock-c9:1
+$ docker run -td  -p <local-port>:8182 techtaste/dock-c9
 ```
+
+open : http://localhost:8182/ide.html
+
+![](dock-c9.png)
 
 ### Example
 ```
-$ docker run -td  -p 8182:8182 dock-c9:1
+$ docker run -td  -p 8182:8182 techtaste/dock-c9
 ```
 <br/>
 
 ### Custome path
 Pass env "C9_PATH" value to change working directory(WD). Default WD="/work/c9sdk")
 ```bash
-$ docker run -td  -p 8182:8182 -e C9_PATH=<path> dock-c9:1
+$ docker run -td  -p 8182:8182 -e C9_PATH=<path> techtaste/dock-c9
 ```
 ### Example
 ```
-$ docker run -td  -p 8182:8182 -e C9_PATH=/ dock-c9:1
+$ docker run -td  -p 8182:8182 -e C9_PATH=/ techtaste/dock-c9
 ```
 
 ### Reference

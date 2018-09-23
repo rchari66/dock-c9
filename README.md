@@ -15,7 +15,7 @@ $ docker run -td  -p 8182:8182 techtaste/dock-c9
 ```
 <br/>
 
-### Custome path
+### Custom path
 Pass env "C9_PATH" value to change working directory(WD). Default WD="/work/c9sdk")
 ```bash
 $ docker run -td  -p 8182:8182 -e C9_PATH=<path> techtaste/dock-c9
